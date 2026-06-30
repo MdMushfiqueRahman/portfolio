@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Md Mushfique Rahman — Computer Science undergraduate researcher focused on wireless networks, cybersecurity, and distributed systems at UNC Pembroke.">
+  <meta name="author" content="Md Mushfique Rahman">
+  <meta name="keywords" content="Md Mushfique Rahman, computer science, cybersecurity, wireless networks, research, portfolio, UNC Pembroke">
+  <meta property="og:title" content="Md Mushfique Rahman | Portfolio">
+  <meta property="og:description" content="Computer Science researcher and software engineer specializing in wireless telemetry, container security, and AI-driven systems.">
+  <meta property="og:type" content="website">
+  <title>Md Mushfique Rahman | Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="nav-logo">M. Rahman</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#awards" class="nav-link">Awards</a></li>
+        <li><a href="#cv" class="nav-link">CV</a></li>
+        <li><a href="contact.html" class="nav-link nav-link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Md Mushfique Rahman</h1>
+          <p class="hero-title">Computer Science Undergraduate · Cyber Track</p>
+          <p class="hero-intro">
+            Computer Science student at UNC Pembroke focused on full-stack development, AI, and cybersecurity. I enjoy building practical software and research-driven systems where engineering, security, and AI come together to solve real-world problems.
+
+          </p>
+          <div class="hero-actions">
+            <a href="assets/Resume_Md_Mushfique_Rahman_2026%20(Main).pdf" class="btn btn-primary" download="Resume_Md_Mushfique_Rahman_2026.pdf">Download CV</a>
+            <a href="#projects" class="btn btn-secondary">View Projects</a>
+            <a href="contact.html" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/profile.png" alt="Md Mushfique Rahman — professional headshot" width="280" height="280" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am pursuing my B.S. in Computer Science with a Cyber Track at the University of North Carolina at Pembroke, with an expected graduation date of December 2026. My journey in computer science has been shaped by hands-on learning — building software, supporting cybersecurity labs, assisting students, and contributing to research projects that connect theory with real systems.
+            </p>
+            <p>
+              Outside the lab, I have served as a teaching assistant, cybersecurity lab assistant, and student coach, and I have built full-stack applications using Django, Python, and modern web technologies. I enjoy turning ideas into working products, experimenting with AI tools, and studying how systems behave under pressure. Outside of academics and projects, I like reading books, driving, and exploring new technologies.
+            </p>
+            <p class="about-interests">
+              <strong>Research & Work interests:</strong> Full-stack software development, AI-powered applications, cybersecurity, backend engineering, edge computing, UAV telemetry, and secure distributed systems.
+            </p>
+          </div>
+          <aside class="about-facts">
+            <h3 class="about-facts-title">Quick Facts</h3>
+            <dl class="facts-list">
+              <div class="facts-item">
+                <dt>Education</dt>
+                <dd>B.S. Computer Science (Cyber Track), UNCP</dd>
+              </div>
+              <div class="facts-item">
+                <dt>Expected Graduation</dt>
+                <dd>December 2026</dd>
+              </div>
+              <div class="facts-item">
+                <dt>Location</dt>
+                <dd>Raleigh, NC</dd>
+              </div>
+              <div class="facts-item">
+                <dt>Focus Areas</dt>
+                <dd>Software Engineering · Full-Stack Development · Applied AI · Cybersecurity · Secure Systems</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="section section-alt" id="research">
+      <div class="container">
+        <h2 class="section-title">Research</h2>
+        <p class="section-subtitle">Undergraduate research at UNC Pembroke, spanning wireless security, container systems, and public health informatics.</p>
+        <div class="card-grid">
+
+          <article class="card research-card">
+            <div class="card-meta">
+              <span class="card-date">Jan 2026 – Present</span>
+              <span class="card-tag">Ongoing</span>
+            </div>
+            <h3 class="card-title">RAG-Based Framework for Drone Telemetry &amp; Wireless Attack Analysis</h3>
+            <p class="card-org">University of North Carolina at Pembroke</p>
+            <p class="card-desc">
+              Built a Django backend pipeline to collect, process, and store UAV telemetry — GPS coordinates, altitude,
+              timestamps, and status labels — streamed over wireless networks. Running controlled experiments on how network
+              disruptions affect data integrity and positional consistency, and exploring RAG methods for AI-assisted
+              explanation of abnormal telemetry under attack conditions.
+            </p>
+            <ul class="card-keywords">
+              <li>Django</li>
+              <li>WiFi Telemetry</li>
+              <li>RAG</li>
+              <li>DJI SDK</li>
+            </ul>
+          </article>
+
+          <article class="card research-card">
+            <div class="card-meta">
+              <span class="card-date">Feb 2026 – Present</span>
+              <span class="card-tag">Ongoing</span>
+            </div>
+            <h3 class="card-title">Security Analysis of Containerized Systems</h3>
+            <p class="card-org">University of North Carolina at Pembroke · To be presented at PURC Symposium 2027</p>
+            <p class="card-desc">
+              Designed a controlled testbed to evaluate Docker, Podman, Kubernetes, and Apptainer across Intel/AMD and
+              ARM systems, including Raspberry Pi 5. Measured the impact of DoS, privilege escalation, and remote code
+              execution attacks on CPU usage, memory, response time, uptime, and recovery — comparing rooted vs. rootless platforms.
+            </p>
+            <ul class="card-keywords">
+              <li>Docker</li>
+              <li>Podman</li>
+              <li>Kubernetes</li>
+              <li>Raspberry Pi 5</li>
+            </ul>
+          </article>
+
+          <article class="card research-card">
+            <div class="card-meta">
+              <span class="card-date">Jan 2025 – Aug 2025</span>
+            </div>
+            <h3 class="card-title">Digital Twin for Network Security</h3>
+            <p class="card-org">University of North Carolina at Pembroke</p>
+            <p class="card-desc">
+              Studied digital-twin techniques for modeling and securing network environments. Simulated network
+              topologies to identify and analyze potential vulnerabilities in controlled settings.
+            </p>
+            <ul class="card-keywords">
+              <li>Digital Twins</li>
+              <li>Network Simulation</li>
+              <li>Security</li>
+            </ul>
+          </article>
+
+          <article class="card research-card">
+            <div class="card-meta">
+              <span class="card-date">2024</span>
+              <span class="card-tag card-tag--presented">PURC Symposium 2024</span>
+            </div>
+            <h3 class="card-title">Neighborhood Microscope: Big Data for Health &amp; Well-being</h3>
+            <p class="card-org">University of North Carolina at Pembroke · Undergraduate Research Project, PURC 2024</p>
+            <p class="card-desc">
+              Contributed to an interdisciplinary project examining how built environment factors influence health,
+              crime, and physical activity in urban and rural NC neighborhoods. Worked with geotagged social media,
+              Google Street View imagery, crime and health data, and applied text mining, geospatial analysis, and
+              visualization in Python. Presented at PURC 2024.
+            </p>
+            <ul class="card-keywords">
+              <li>Big Data</li>
+              <li>Geospatial Analysis</li>
+              <li>Public Health</li>
+              <li>Python</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Full-stack applications and systems built during coursework, research, and independent work.</p>
+        <div class="card-grid">
+
+          <article class="card project-card">
+            <h3 class="card-title">FraudMind AI</h3>
+            <p class="card-subtitle">Cybersecurity AI Platform</p>
+            <p class="card-stack">Django · OpenAI API · Python · Chart.js · HTML · CSS</p>
+            <p class="card-desc">
+              Full-stack analyzer for phishing and social-engineering attempts with structured JSON risk assessment
+              — risk level, scam classification, pressure scoring, and manipulation-tactic detection. Includes a
+              SOC-style dashboard with KPI indicators and secure API-key management via environment variables.
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <h3 class="card-title">VETORA</h3>
+            <p class="card-subtitle">AI-Powered Pet Health Tools</p>
+            <p class="card-stack">Django · OpenAI API · TheCatAPI · OpenWeather · Google Places · Python</p>
+            <p class="card-desc">
+              Full-stack platform for pet symptom analysis and urgency classification, with real-time weather alerts
+              and location-based veterinary discovery. Secure authentication with user-specific pet profiles and
+              persistent analysis history.
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <h3 class="card-title">Plutus</h3>
+            <p class="card-subtitle">Financial Tracker (Capstone)</p>
+            <p class="card-stack">Python · PySide6 · SQLite · HTML · CSS · JS</p>
+            <p class="card-desc">
+              Desktop application for tracking income, expenses, and transactions with budgeting, category allocation,
+              real-time spending insights, and goal-setting with what-if analysis for financial planning.
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <h3 class="card-title">I.T. Asset Tracking System</h3>
+            <p class="card-stack">PHP · SQL · HTML · CSS · JS</p>
+            <p class="card-desc">
+              Web-based system to manage and track I.T. assets with real-time status updates, a centralized dashboard
+              showing asset lifecycle states, and category-based filtering. Validated through manual black-box testing
+              with a 100% test pass rate.
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <h3 class="card-title">School Management System</h3>
+            <p class="card-subtitle">Object-Oriented Programming</p>
+            <p class="card-stack">Java</p>
+            <p class="card-desc">
+              Role-based system for students, teachers, and administrators with authentication and login attempt limits.
+            </p>
+          </article>
+
+        </div>
+        <p class="projects-github">
+          More code on
+          <a href="https://github.com/MdMushfiqueRahman" target="_blank" rel="noopener noreferrer">GitHub</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Student Coach</h3>
+                <time class="timeline-date" datetime="2024-08">Aug 2024 – Present</time>
+              </div>
+              <p class="timeline-org">Center for Student Success, UNCP · Pembroke, NC</p>
+              <p class="timeline-desc">Advise students on academic success strategies and course selection, support students facing academic challenges, and organize engagement events.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Teaching Assistant</h3>
+                <time class="timeline-date" datetime="2024-08/2025-05">Aug 2024 – May 2025</time>
+              </div>
+              <p class="timeline-org">Dept. of Mathematics &amp; Computer Science, UNCP · Pembroke, NC</p>
+              <p class="timeline-desc">Managed departmental communications and website updates. Ensured content accuracy, accessibility, and visual quality.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Lab Assistant</h3>
+                <time class="timeline-date" datetime="2024-08/2025-02">Aug 2024 – Feb 2025</time>
+              </div>
+              <p class="timeline-org">Cyber Defense Education Center, UNCP · Pembroke, NC</p>
+              <p class="timeline-desc">Supervised cybersecurity labs and assisted students with hands-on exercises.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Web Designer (Front-End)</h3>
+                <time class="timeline-date" datetime="2022-05/2022-12">May 2022 – Dec 2022</time>
+              </div>
+              <p class="timeline-org">Creative Shaper · Dhaka, Bangladesh</p>
+              <p class="timeline-desc">Built responsive websites using HTML, CSS, and JavaScript.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Programming Languages</h3>
+            <ul class="skill-list">
+              <li>Python</li>
+              <li>Java</li>
+              <li>C++</li>
+              <li>Go</li>
+              <li>PHP</li>
+              <li>Prolog</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Web &amp; Backend</h3>
+            <ul class="skill-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Django</li>
+              <li>React</li>
+              <li>Apache Web Server</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Databases</h3>
+            <ul class="skill-list">
+              <li>MySQL / SQL</li>
+              <li>MongoDB</li>
+              <li>SQLite</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Containers &amp; Cloud</h3>
+            <ul class="skill-list">
+              <li>Docker</li>
+              <li>Podman</li>
+              <li>Kubernetes</li>
+              <li>Apptainer</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Cybersecurity &amp; Systems</h3>
+            <ul class="skill-list">
+              <li>Kali Linux</li>
+              <li>VirtualBox</li>
+              <li>Linux Monitoring (top, htop, vmstat, netstat, tcpdump, sysdig)</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Tools &amp; Other</h3>
+            <ul class="skill-list">
+              <li>Git &amp; GitHub</li>
+              <li>Data Analysis</li>
+              <li>Chart.js</li>
+              <li>OpenAI API / RAG Prototyping</li>
+              <li>Communication &amp; Leadership</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards & Leadership -->
+    <section class="section section-alt" id="awards">
+      <div class="container">
+        <h2 class="section-title">Awards &amp; Leadership</h2>
+        <div class="awards-grid">
+
+          <div class="awards-col">
+            <h3 class="awards-heading">Honors &amp; Awards</h3>
+            <ul class="awards-list">
+              <li>UNCP Chancellor's / Honors List — Spring 2026, Spring 2023, Fall 2023, Spring 2024, Fall 2024</li>
+              <li>UNCP Undergraduate Computer Science Award 2024 — Nominated</li>
+            </ul>
+          </div>
+
+          <div class="awards-col">
+            <h3 class="awards-heading">Leadership &amp; Activities</h3>
+            <ul class="awards-list">
+              <li>President, UNCP Bangladeshi Students Association (2024–2025)</li>
+              <li>Vice President, UNCP Bangladeshi Students Association (2024–2025)</li>
+              <li>Student Body Senator, SGA UNCP (2023–2024)</li>
+              <li>Reading Lead, AI@UNCP (2023–2024)</li>
+              <li>Campus Ambassador, English Olympiad (Season 1 – Season 2)</li>
+              <li>Sub-Organizer, Coding Olympiad BD (2021–2022)</li>
+              <li>Vice President, College of Development Alternative IT Club (2018–2020)</li>
+            </ul>
+          </div>
+
+          <div class="awards-col">
+            <h3 class="awards-heading">Certifications</h3>
+            <ul class="awards-list">
+              <li>Professional Django Developer — AI Quest (Sept 2024)</li>
+              <li>Front-End Web Development — Creative Shaper (April 2022)</li>
+              <li>IBM Full Stack Software Developer — IBM (Expected July 2026)</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section class="section cv-section" id="cv">
+      <div class="container cv-inner">
+        <h2 class="section-title">Curriculum Vitae</h2>
+        <p class="section-subtitle">Download my full academic CV for PhD applications, research positions, job and internship opportunities.</p>
+        <a href="assets/Resume_Md_Mushfique_Rahman_2026%20(Main).pdf" class="btn btn-primary btn-lg" download="Resume_Md_Mushfique_Rahman_2026.pdf">
+          <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV (PDF)
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Md Mushfique Rahman. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <a href="https://github.com/MdMushfiqueRahman" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/md-mushfique-rahman" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:mushrahmanofficial@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

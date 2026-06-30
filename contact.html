@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Md Mushfique Rahman — email, LinkedIn, and GitHub. Open to research collaborations, PhD opportunities, and internships.">
+  <meta name="author" content="Md Mushfique Rahman">
+  <title>Contact | Md Mushfique Rahman</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">M. Rahman</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#research" class="nav-link">Research</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="index.html#awards" class="nav-link">Awards</a></li>
+        <li><a href="index.html#cv" class="nav-link">CV</a></li>
+        <li><a href="contact.html" class="nav-link nav-link--cta active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-main">
+    <div class="container contact-container">
+      <h1 class="contact-page-title">Contact</h1>
+      <p class="contact-page-intro">
+        Prefer email or LinkedIn. For a short intro, use
+        <a href="mailto:mushrahmanofficial@gmail.com?subject=20-minute%20chat%20request&amp;body=Hi%20Mushfique%2C%0A%0AI%27d%20like%20to%20schedule%20a%20brief%2020-minute%20chat.%0A%0ABest%2C%0A" class="contact-inline-link">book a 20-minute chat</a>
+        (opens your mail app).
+      </p>
+
+      <div class="contact-layout">
+        <form class="contact-form" id="contact-form" data-email="mushrahmanofficial@gmail.com" novalidate>
+          <div class="form-group">
+            <label for="contact-name" class="form-label">Name</label>
+            <input type="text" id="contact-name" name="name" class="form-input" autocomplete="name" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email" class="form-label">Email</label>
+            <input type="email" id="contact-email" name="email" class="form-input" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Message</label>
+            <textarea id="contact-message" name="message" class="form-textarea" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send via email app</button>
+        </form>
+
+        <aside class="contact-links" aria-label="Direct contact links">
+          <ul class="contact-links-list">
+            <li>
+              <a href="mailto:mushrahmanofficial@gmail.com">mushrahmanofficial@gmail.com</a>
+            </li>
+            <li>
+              <a href="https://github.com/MdMushfiqueRahman" target="_blank" rel="noopener noreferrer">Github</a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/md-mushfique-rahman" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Md Mushfique Rahman. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <a href="https://github.com/MdMushfiqueRahman" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/md-mushfique-rahman" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:mushrahmanofficial@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
