@@ -417,6 +417,12 @@ ul {
   transition: box-shadow var(--transition), border-color var(--transition);
 }
 
+.project-card,
+.research-card {
+  display: flex;
+  flex-direction: column;
+}
+
 .section-alt .card {
   background: var(--color-bg);
 }
@@ -453,6 +459,27 @@ ul {
 .card-tag--presented {
   background: #f0fff4;
   color: #276749;
+}
+
+.card-tag--completed {
+  background: var(--color-bg-alt);
+  color: var(--color-text-muted);
+}
+
+.card-link-wrap {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.card-link {
+  display: inline-flex;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.card-link:hover {
+  color: var(--color-accent-hover);
 }
 
 .card-title {

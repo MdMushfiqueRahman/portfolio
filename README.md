@@ -27,7 +27,7 @@ PortFolio/
 ├── assets/
 │   ├── profile.png     # Profile photo
 │   ├── favicon.svg     # Site favicon
-│   └── Resume_Md_Mushfique_Rahman_2026 (Main).pdf
+│   └── Md_Mushfique_Rahman_Resume.pdf
 └── README.md
 ```
 
@@ -37,9 +37,9 @@ PortFolio/
 
 The profile photo is at `assets/profile.png`. To replace it, swap that file and keep the same filename, or update the `<img>` tag in `index.html`.
 
-### CV
+### Resume
 
-Place your CV at `assets/Resume_Md_Mushfique_Rahman_2026 (Main).pdf`. If you rename the file, update both download links in `index.html`.
+The current one-page resume is `assets/Md_Mushfique_Rahman_Resume.pdf`. If you rename the file, update both download links in `index.html`.
 
 ### Custom Domain (CNAME)
 
@@ -89,7 +89,7 @@ Name the repository exactly `YOUR_USERNAME.github.io` and push to `main`. GitHub
 
 - [ ] Home page loads
 - [ ] Navigation and mobile menu work
-- [ ] CV PDF downloads correctly
+- [ ] Resume PDF downloads correctly
 - [ ] External links (GitHub, LinkedIn, email) work
 - [ ] Site looks correct on mobile
 
