@@ -7,9 +7,51 @@
   var navLinks = document.querySelectorAll('.nav-link');
   var sections = document.querySelectorAll('section[id]');
   var yearEl = document.getElementById('year');
+  var themeToggle = document.getElementById('theme-toggle');
+  var root = document.documentElement;
+  var themeMeta = document.querySelector('meta[name="theme-color"]');
 
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
+  }
+
+  function currentTheme() {
+    return root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+  }
+
+  function applyTheme(theme, persist) {
+    var isDark = theme === 'dark';
+    if (isDark) {
+      root.setAttribute('data-theme', 'dark');
+    } else {
+      root.removeAttribute('data-theme');
+    }
+    if (themeMeta) themeMeta.setAttribute('content', isDark ? '#0e141d' : '#ffffff');
+    if (themeToggle) {
+      themeToggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+      themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+    if (persist) {
+      try {
+        localStorage.setItem('theme', theme);
+      } catch (e) {}
+    }
+  }
+
+  function toggleTheme() {
+    var next = currentTheme() === 'dark' ? 'light' : 'dark';
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduceMotion) root.classList.add('theme-transition');
+    applyTheme(next, true);
+    window.setTimeout(function () {
+      root.classList.remove('theme-transition');
+    }, 320);
+  }
+
+  applyTheme(currentTheme(), false);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', toggleTheme);
   }
 
   /* Sticky header shadow on scroll */
